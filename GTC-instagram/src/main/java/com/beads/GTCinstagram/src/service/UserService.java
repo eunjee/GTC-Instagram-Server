@@ -1,2 +1,13 @@
-package com.beads.GTCinstagram.src.service;public class UserService {
+package com.beads.GTCinstagram.src.service;
+
+import com.beads.GTCinstagram.src.domain.user.UserRepository;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+
+@Service
+@Slf4j
+@RequiredArgsConstructor
+public class UserService {
+    private final UserRepository userRepository;
 }
